@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+body {
+    background: #E9ECF0;
+    color:#333;
+    font:14px/1.5 "微软雅黑","宋体",Arial;
+}
+body.noscroll{
+    touch-action: none;
+    overflow: hidden;
+}
+
+body.overflow-hidden {
+    overflow: hidden;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body,button,dd,dl,h1,h2,h3,h4,h5,h6,input,ol,p,textarea,ul{
+    padding:0;margin:0
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight:400
+}
+
+button,input,select,textarea{
+    outline:0;
+    color:inherit;
+    font-size:inherit;
+    font-family:inherit
+}
+
+input[type=button],input[type=submit],input[type=reset]{
+    cursor:pointer
+}
+
+img{
+    vertical-align:top;border:0
+}
+
+input::-webkit-autofill,
+textarea::-webkit-autofill,
+select::-webkit-autofill {
+    background-color: transparent;
+    background-image: none;
+    color: inherit;
+}
+
+ul,
+dl,
+dt,
+dd {
+    list-style: none;
+}
+
+li{
+    list-style:none
+}
+textarea{
+    resize:none
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    -webkit-focus-ring-color: transparent;
+}
+
+i,
+em,
+strong {
+    font-style: normal;
+}
+
+.cl {
+    *zoom: 1;
+}
+
+.cl:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+.text-overflow {
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.text-overflow-line2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+.text-overflow-line3 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
