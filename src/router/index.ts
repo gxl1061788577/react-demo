@@ -1,9 +1,4 @@
-interface route{
-    path:string,
-    name:string,
-    title:string,
-    component:any,
-}
+import { route } from 'ts/interfaces';
 
 const router:route[] = [
     ...require('router/home'),

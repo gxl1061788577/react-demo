@@ -1,10 +1,8 @@
-interface route{
-    path:string,
-    name:string,
-    title:string,
-    component:any,
-}
-const Home = () => require('views/home');
+import React from 'react';
+
+import { route } from 'ts/interfaces';
+
+const Home = React.lazy(() => import('views/home/index'));
 
 const HomeRoute:route[] = [
     {

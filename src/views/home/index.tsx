@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
+import { Prompt } from 'react-router-dom';
 
 class Home extends Component {
     public constructor(){
@@ -8,7 +9,11 @@ class Home extends Component {
     public render() {
         return (
             <div>
-                <div></div>
+                <div>home</div>
+                <Prompt
+                    when={true}
+                    message="你确定要离开当前页面吗？"
+                />
             </div>
         );
     }
