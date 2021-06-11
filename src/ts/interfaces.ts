@@ -3,7 +3,8 @@ interface route{
     path:string,
     name:string,
     title:string,
-    component:any,
+    component?:any,
+    routes?:route[],
 }
 
 export type {
