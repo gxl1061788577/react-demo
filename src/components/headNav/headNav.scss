@@ -1,0 +1,44 @@
+.headNav{
+    width: 100%;
+    background-color: #fff;
+    height: 60px;
+    .box{
+        margin: 0 auto;
+        width: 1140px;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .left{
+            height: 100%;
+            display: inline-flex;
+            justify-content: flex-start;
+            align-items: center;
+            .logo{
+                height: 100%;
+                width: 200px;
+                img{
+                    height: 100%;
+                }
+            }
+            .nav-list{
+                display: inline-flex;
+                justify-content: flex-start;
+                align-items: center;
+                div{
+                    width: 50px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .right{
+            height: 100%;
+            .avater{
+                height: 100%;
+                img{
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

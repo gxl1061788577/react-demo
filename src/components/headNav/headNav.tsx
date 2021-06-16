@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import 'components/headNav/index.less'
+import 'components/headNav/headNav.scss'
 import logo from '../../assets/imgs/logo.png'
 import avater from '../../assets/imgs/logo.png'
 class headNav extends Component{
@@ -12,7 +12,10 @@ class headNav extends Component{
                             <img src={logo} alt="logo" />
                         </div>
                         <div className="nav-list">
-
+                            <div>首页</div>
+                            <div>首页</div>
+                            <div>首页</div>
+                            <div>首页</div>
                         </div>
                     </div>
                     <div className="right">

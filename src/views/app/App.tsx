@@ -3,7 +3,7 @@ import { route } from 'ts/interfaces';
 import React,{Suspense} from 'react';
 import { BrowserRouter as Router, Switch, Redirect } from 'react-router-dom';
 
-import './App.less';
+import './App.scss';
 
 const Layout  = React.lazy(() => import('views/layout/layout'));
 
