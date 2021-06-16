@@ -2,9 +2,6 @@ import { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 class Home extends Component {
-    public constructor(){
-        super();
-    }
     componentDidMount(){
         console.log('加载')
     }
