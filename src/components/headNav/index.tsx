@@ -1,13 +1,27 @@
 import React, { Component } from 'react';
-// import 'components/headNav/headNav.less'
+import 'components/headNav/index.less'
+import logo from '../../assets/imgs/logo.png'
+import avater from '../../assets/imgs/logo.png'
 class headNav extends Component{
     render() {
         return (
-            // <React.Fragment>
-                <div className="headNav">
-                    111
+            <div className="headNav">
+                <div className="box">
+                   <div className="left">
+                        <div className="logo">
+                            <img src={logo} alt="logo" />
+                        </div>
+                        <div className="nav-list">
+
+                        </div>
+                    </div>
+                    <div className="right">
+                        <div className="avater">
+                            <img src={avater} alt="" />
+                        </div>
+                    </div> 
                 </div>
-            // </React.Fragment>
+            </div>
         );
     }
 }
