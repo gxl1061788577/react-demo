@@ -1,5 +1,4 @@
-import { Component } from 'react';
-
+import React,{ Component } from 'react';
 class Home extends Component {
     componentDidMount(){
         console.log('加载')
@@ -7,7 +6,6 @@ class Home extends Component {
     public render() {
         return (
             <div className="Home">
-                
             </div>
         );
     }

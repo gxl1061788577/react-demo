@@ -1,0 +1,17 @@
+.main-content{
+    margin: 0 auto;
+    max-width: 1140px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    justify-items: center;
+    .left{
+        width: 228px;
+        height: 500px;
+        background-color: #fff;
+    }
+    .main{
+        width: 100%;
+        height: 600px;
+        background-color: #ff2;
+    }
+}
