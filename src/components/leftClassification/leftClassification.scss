@@ -1,0 +1,12 @@
+.leftClassification{
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    .type{
+        >div{
+            padding: 10px 20px;
+            line-height: 20px;
+            font-size: 16px;
+        }
+    }
+}

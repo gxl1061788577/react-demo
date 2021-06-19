@@ -1,0 +1,97 @@
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    .box{
+        width: 1140px;
+        margin: 0 auto;
+        padding: 48px 0;
+        .top{
+            width: 100%;
+            display: flex;
+            dl{
+                flex: 0 0 16.66667%;
+                max-width: 16.66667%;
+                padding: 0 12px;
+                margin-bottom: 16px;
+                box-sizing: border-box;
+                dt{
+                    font-size: 16px;
+                    font-weight: 500;
+                    margin-bottom: 8px;
+                    line-height: 19px;
+                    color: #212529;
+                }
+                dd{
+                    margin: 4px 0;
+                    line-height: 21px;
+                    font-size: 14px;
+                    color: #6c757d;
+                }
+            }
+        }
+        hr{
+            margin-top: 8px;
+            margin-bottom: 0;
+            border: 0;
+            border-top:1px solid rgba(0,0,0,.05)
+        }
+        .bottom{
+            display: flex;
+            padding-top: 24px;
+            overflow: hidden;
+            box-sizing: content-box;
+            >div{
+                padding: 0 12px;
+            }
+            .left{
+                p{
+                    font-size: 14px;
+                    color: #6c757d;
+                    margin-bottom: 4px;
+                }
+            }
+            .right{
+                flex: 1;
+                display: flex;
+                justify-content: flex-end;
+                svg{
+                    width: 18px;
+                    height: 18px;
+                    margin-left: 6px;
+                    color: rgba(0,0,0,0.7);
+                    cursor: pointer;
+                    &:hover{
+                        color: rgba(0,0,0,1);
+                    }
+                }
+                .bug{
+                    animation:bugrun 1.5s ease-in-out;
+                    animation-fill-mode:forwards;
+                    position: relative;
+                    z-index: 10;
+                }
+                @keyframes bugrun {
+                    0%{
+                        transform: translateX(-1px);
+                    }
+                    4%{
+                        transform: translateX(1px);
+                    }
+                    8%{
+                        transform: translateX(-1px);
+                    }
+                    12%{
+                        transform: translateX(1px);
+                    }
+                    50%{
+                        transform: translateY(-50px);
+                    }
+                    100%{
+                        transform: translateY(-50px);
+                    }
+                }
+            }
+        }
+    }
+}

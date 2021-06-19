@@ -1,7 +1,6 @@
 import { Component } from 'react';
 import 'views/loading/loading.scss'
-
-class index extends Component {
+class loading extends Component {
     render() {
         return (
             <div className="loading">
@@ -19,4 +18,4 @@ class index extends Component {
     }
 }
 
-export default index;
+export default loading;
