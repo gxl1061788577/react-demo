@@ -7,7 +7,10 @@ class leftClassification extends Component {
         return (
             <div className="leftClassification">
                 <div className="type">
-                    <div>分类</div>
+                    <div>
+                        
+                        <span>分类</span>
+                    </div>
                     <div>分类</div>
                     <div>分类</div>
                     <div>分类</div>
