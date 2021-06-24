@@ -1,7 +1,8 @@
 import { Component } from 'react';
 import 'views/home/home.scss'
 import LeftClassification from 'components/leftClassification/leftClassification';
-import RightRecommendation from 'components/rightRecommendation/rightRecommendation'
+import RightRecommendation from 'components/rightRecommendation/rightRecommendation';
+import Pagination from 'components/pagination/pagination';
 class Home extends Component {
     componentDidMount(){
         console.log('加载')
@@ -71,6 +72,8 @@ class Home extends Component {
                             </div>
                         </div>
                     </div>
+                    <hr />
+                    <Pagination page={1} total={100}></Pagination>
                 </div>
                 <RightRecommendation></RightRecommendation>
             </div>
