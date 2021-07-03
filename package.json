@@ -19,7 +19,10 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start --max_old_space_size=4096",
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start-js": "node scripts/start.js",
+    "start": "react-app-rewired start --max_old_space_size=4096",
     "build": "react-scripts build --max_old_space_size=4096",
     "test": "react-scripts test --max_old_space_size=4096",
     "eject": "react-scripts eject"
@@ -45,7 +48,10 @@
   "devDependencies": {
     "@babel/core": "^7.14.3",
     "@types/react": "^17.0.9",
+    "customize-cra": "^1.0.0",
     "node-sass": "^6.0.0",
-    "sass-loader": "^12.1.0"
+    "react-app-rewired": "^2.1.8",
+    "sass-loader": "^12.1.0",
+    "sass-resources-loader": "^2.2.3"
   }
 }
