@@ -4,6 +4,7 @@ import { route } from 'ts/interfaces';
 
 const Home = React.lazy(() => import('views/home/home'));
 const Login  = React.lazy(() => import('views/user/login/login'));
+const User  = React.lazy(() => import('views/user/user'));
 
 const HomeRoute:route[] = [
     {
@@ -35,6 +36,12 @@ const HomeRoute:route[] = [
                 name:'login',
                 title:'登录',
                 component:Login,
+            },
+            {
+                path:'/extra/user',
+                name:'user',
+                title:'user',
+                component:User,
             }
         ]
     }
